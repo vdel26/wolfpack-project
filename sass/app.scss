@@ -43,3 +43,41 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+body {
+    font-family: 'Cassannet';
+    background-color: $body-bg;
+}
+.strong {
+    font-family: 'Cassannet Bold';
+    letter-spacing: 1px;
+}
+.full {
+    min-width: 100%;
+    margin: 0;
+    max-height: 600px;
+    overflow-y: hidden;
+}
+.wolfpack-container {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-top: 10%;
+
+    h1 {
+        color: #FFF;
+    }
+}
+.header-video {
+    width: 100%;
+    z-index: 0;
+}
+.top-bar {
+    box-shadow: 0px 4px 10px 0px #C4C4C4;
+}
+.section1-panel {
+    overflow: hidden;
+    background-color: #FFF;
+    border-radius: 5px;
+}

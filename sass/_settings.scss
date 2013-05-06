@@ -23,7 +23,7 @@ $em-base: 16px !default;
 
 //// Various global styles
 
-// $body-bg: #fff;
+$body-bg: rgb(236,236,236);
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -112,9 +112,18 @@ $em-base: 16px !default;
 // Typography Variables
 //
 
+@font-face {
+    font-family: 'Cassannet';
+    src: url('../images/Cassannet.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Cassannet Bold';
+    src: url('../images/CassannetBold.otf') format('opentype');
+}
+
 //// Heading font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "Cassannet", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -147,9 +156,9 @@ $em-base: 16px !default;
 
 //// Paragraphs
 
-// $paragraph-font-family: inherit;
-// $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
+$paragraph-font-family: 'Cassannet';
+$paragraph-font-weight: normal;
+$paragraph-font-size: 1em;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: emCalc(20px);
 // $paragraph-aside-font-size: emCalc(14px);
@@ -1143,11 +1152,11 @@ $em-base: 16px !default;
 
 //// Background color for the top bar
 
-// $topbar-bg: #111;
+$topbar-bg: #FFF;
 
 //// Height and margin
 
-// $topbar-height: 45px;
+$topbar-height: 60px;
 // $topbar-margin-bottom: emCalc(30px);
 
 //// Input height for top bar
