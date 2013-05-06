@@ -1,5 +1,8 @@
 all:
 
+server:
+	python -m SimpleHTTPServer 8080
+
 build:
 	compass compile
 

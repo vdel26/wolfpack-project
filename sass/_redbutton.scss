@@ -18,5 +18,5 @@ $is-input: false;
 
 .redbutton {
     @include button($padding, $bg, $radius, $full-width, $disabled, $is-input);
-    font-family: "Helvetica Neue";
+    font-family: "Lucida Grande";
 }
