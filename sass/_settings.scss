@@ -24,7 +24,7 @@ $em-base: 16px !default;
 //// Various global styles
 
 $body-bg: rgb(236,236,236);
-// $body-font-color: #222;
+$body-font-color: #6a7181;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -46,7 +46,7 @@ $body-bg: rgb(236,236,236);
 
 //// Make sure border radius matches unless we want it different.
 
-// $global-radius: 3px;
+$global-radius: 3px;
 // $global-rounded: 1000px;
 
 //// Inset shadow shiny edges and depressions.
@@ -126,7 +126,7 @@ $body-bg: rgb(236,236,236);
 $header-font-family: "Cassannet", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #141823;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
@@ -1161,7 +1161,7 @@ $topbar-height: 60px;
 
 //// Input height for top bar
 
-// $topbar-input-height: 2.45em;
+$topbar-input-height: 2.45em;
 
 //// Title in the top bar
 

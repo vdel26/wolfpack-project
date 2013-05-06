@@ -1,0 +1,22 @@
+/* This controls padding around the buttons. Use a variable or em value */
+$padding: $button-med;
+
+/* This controls button color. Set to one of our variables or a custom hex value */
+$bg: #f93a3d;
+
+/* This controls button radius. Set to a variable, true/false, or custom px value */
+$radius: 6px;
+
+/* This whether button is full-width. Set to true or false */
+$full-width: false;
+
+/* This controls whether disabled styles are used. Set to true or false */
+$disabled: false;
+
+/* This controls padding for inputs, they are a little different */
+$is-input: false;
+
+.redbutton {
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-input);
+    font-family: "Helvetica Neue";
+}

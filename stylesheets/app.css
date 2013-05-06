@@ -27,7 +27,7 @@ body {
 /* line 228, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_global.scss */
 body {
   background: #ececec;
-  color: #222222;
+  color: #6a7181;
   padding: 0;
   margin: 0;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -1652,7 +1652,7 @@ p.lead {
 /* line 111, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #4c5b84;
   font-weight: 300;
   margin-top: 0.2em;
   margin-bottom: 0.5em;
@@ -1723,7 +1723,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Cassannet", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
-  color: #222222;
+  color: #141823;
   text-rendering: optimizeLegibility;
   margin-top: 0.2em;
   margin-bottom: 0.5em;
@@ -1732,7 +1732,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 186, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
-  color: #6f6f6f;
+  color: #4c5b84;
   line-height: 0;
 }
 
@@ -1870,7 +1870,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222222;
+  color: #6a7181;
   border-bottom: 1px dotted #dddddd;
   cursor: help;
 }
@@ -1891,7 +1891,7 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125em;
-  color: #555555;
+  color: #394564;
 }
 /* line 310, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
 blockquote cite:before {
@@ -1900,14 +1900,14 @@ blockquote cite:before {
 /* line 315, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
-  color: #555555;
+  color: #394564;
 }
 
 /* line 321, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f;
+  color: #4c5b84;
 }
 
 /* Microformats */
@@ -5850,19 +5850,59 @@ a.th {
   max-width: 800px;
 }
 
-/* line 46, ../sass/app.scss */
+/* This controls padding around the buttons. Use a variable or em value */
+/* This controls button color. Set to one of our variables or a custom hex value */
+/* This controls button radius. Set to a variable, true/false, or custom px value */
+/* This whether button is full-width. Set to true or false */
+/* This controls whether disabled styles are used. Set to true or false */
+/* This controls padding for inputs, they are a little different */
+/* line 19, ../sass/_redbutton.scss */
+.redbutton {
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 1.25em;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 0.75em;
+  padding-right: 1.5em;
+  padding-bottom: 0.8125em;
+  padding-left: 1.5em;
+  font-size: 1em;
+  background-color: #f93a3d;
+  border-color: #f7090c;
+  color: white;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-family: "Helvetica Neue";
+}
+/* line 120, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
+.redbutton:hover, .redbutton:focus {
+  background-color: #f7090c;
+}
+/* line 131, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
+.redbutton:hover, .redbutton:focus {
+  color: white;
+}
+
+/* line 48, ../sass/app.scss */
 body {
   font-family: 'Cassannet';
   background-color: #ececec;
 }
 
-/* line 50, ../sass/app.scss */
+/* line 52, ../sass/app.scss */
 .strong {
   font-family: 'Cassannet Bold';
   letter-spacing: 1px;
 }
 
-/* line 54, ../sass/app.scss */
+/* line 56, ../sass/app.scss */
 .full {
   min-width: 100%;
   margin: 0;
@@ -5870,7 +5910,7 @@ body {
   overflow-y: hidden;
 }
 
-/* line 60, ../sass/app.scss */
+/* line 62, ../sass/app.scss */
 .wolfpack-container {
   position: absolute;
   top: 40px;
@@ -5879,25 +5919,41 @@ body {
   margin-left: 10%;
   margin-top: 10%;
 }
-/* line 68, ../sass/app.scss */
+/* line 70, ../sass/app.scss */
 .wolfpack-container h1 {
+  font-size: 3.75em;
   color: #FFF;
 }
 
-/* line 72, ../sass/app.scss */
+/* line 75, ../sass/app.scss */
 .header-video {
   width: 100%;
   z-index: 0;
 }
 
-/* line 76, ../sass/app.scss */
+/* line 79, ../sass/app.scss */
 .top-bar {
   box-shadow: 0px 4px 10px 0px #C4C4C4;
+  vertical-align: middle;
+}
+/* line 83, ../sass/app.scss */
+.top-bar input {
+  height: 2.45em;
 }
 
-/* line 79, ../sass/app.scss */
+/* line 87, ../sass/app.scss */
+.panel h1, h2, h3 {
+  color: #141823;
+}
+
+/* line 90, ../sass/app.scss */
+.panel p {
+  color: #6a7181;
+}
+
+/* line 93, ../sass/app.scss */
 .section1-panel {
   overflow: hidden;
   background-color: #FFF;
-  border-radius: 5px;
+  border-radius: 3px;
 }
