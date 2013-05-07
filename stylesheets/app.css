@@ -5911,7 +5911,7 @@ a.th {
   clear: both;
 }
 
-/* line 5, ../sass/_email-form.scss */
+/* line 6, ../sass/_email-form.scss */
 .email-box {
   position: relative;
   padding-left: 0.9375em;
@@ -5919,18 +5919,33 @@ a.th {
   width: 66.66667%;
   float: left;
 }
-/* line 15, ../sass/_email-form.scss */
+/* line 16, ../sass/_email-form.scss */
 .email-box input {
   border-radius: 0;
+  margin: 0;
+  height: 2.45em;
+  font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 0;
+  margin-top: 12px;
 }
 
-/* line 21, ../sass/_email-form.scss */
+/* line 27, ../sass/_email-form.scss */
 .email-submit {
   font-size: 14px;
+  margin-top: 12px;
+  /*.touch .button {
+      color: blue;
+      padding: 0.75em 0;
+      width: 100px;
+  }*/
   position: relative;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
   width: 33.33333%;
+  float: right;
+}
+/* line 39, ../sass/_email-form.scss */
+.email-submit button {
   float: right;
 }
 
@@ -5950,7 +5965,7 @@ body {
 .full {
   min-width: 100%;
   margin: 0;
-  max-height: 600px;
+  max-height: 580px;
   overflow-y: hidden;
 }
 
@@ -5971,7 +5986,7 @@ body {
 @media only screen and (min-width: 48em) {
   /* line 63, ../sass/app.scss */
   .wolfpack-container {
-    margin-left: 12%;
+    margin-left: 12.5%;
     margin-top: 10%;
   }
   /* line 80, ../sass/app.scss */
@@ -5987,27 +6002,33 @@ body {
 }
 
 /* line 89, ../sass/app.scss */
-.top-bar {
-  box-shadow: 0px 4px 10px 0px #C4C4C4;
-  vertical-align: middle;
-}
-/* line 93, ../sass/app.scss */
-.top-bar input {
-  height: 2.45em;
-  font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+header.stickybar {
+  margin-bottom: 95px;
 }
 
-/* line 98, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
+.top-bar {
+  box-shadow: 0px 4px 10px 0px #C4C4C4;
+}
+/* line 95, ../sass/app.scss */
+.top-bar.stickybar {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+}
+
+/* line 102, ../sass/app.scss */
 .panel h1, h2, h3 {
   color: #141823;
 }
 
-/* line 101, ../sass/app.scss */
+/* line 105, ../sass/app.scss */
 .panel p {
   color: #6a7181;
 }
 
-/* line 104, ../sass/app.scss */
+/* line 108, ../sass/app.scss */
 .section1-panel {
   overflow: hidden;
   background-color: #FFF;
