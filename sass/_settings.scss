@@ -76,24 +76,24 @@ $global-radius: 3px;
 
 //// Media Queries
 
-// $small-screen: emCalc(768px);
-// $medium-screen: emCalc(1280px);
-// $large-screen: emCalc(1440px);
+$small-screen: emCalc(768px);
+$medium-screen: emCalc(1280px);
+$large-screen: emCalc(1440px);
 
-// $screen: "only screen";
-// $small: "only screen and (min-width:"#{$small-screen}")";
-// $medium: "only screen and (min-width:"#{$medium-screen}")";
-// $large: "only screen and (min-width:"#{$large-screen}")";
-// $landscape: "only screen and (orientation: landscape)";
-// $portrait: "only screen and (orientation: portrait)";
+$screen: "only screen";
+$small: "only screen and (min-width:"#{$small-screen}")";
+$medium: "only screen and (min-width:"#{$medium-screen}")";
+$large: "only screen and (min-width:"#{$large-screen}")";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
 
 //
 // Grid Variables
 //
 
-// $row-width: emCalc(1000px);
-// $column-gutter: emCalc(30px);
-// $total-columns: 12;
+$row-width: emCalc(1000px);
+$column-gutter: emCalc(30px);
+$total-columns: 12;
 
 //
 // Block Grid Variables
@@ -320,12 +320,12 @@ $paragraph-font-size: 1em;
 
 //// Various hover effects.
 
-// $button-function-factor: 10%;
+$button-function-factor: 10%;
 
 //// Button border styles.
 
-// $button-border-width: 1px;
-// $button-border-style: solid;
+$button-border-width: 1px;
+$button-border-style: solid;
 // $button-border-color: darken($primary-color, $button-function-factor);
 
 //// Radius used throughout the core.

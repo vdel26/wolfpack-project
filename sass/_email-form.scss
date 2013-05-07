@@ -1,0 +1,37 @@
+.email-form {
+    $behavior: false;
+    @include grid-row($behavior);
+}
+.email-box {
+    $columns: 8;
+    $last-column: false;
+    $center: false;
+    $offset: false;
+    $push: false;
+    $pull: false;
+    $collapse: false;
+    $float: left;
+
+    input {
+        border-radius: 0;
+    }
+
+    @include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);
+}
+.email-submit {
+    $columns: 2;
+    $last-column: false;
+    $center: false;
+    $offset: false;
+    $push: false;
+    $pull: false;
+    $collapse: false;
+    $float: right;
+    font-size: 14px;
+
+    @media #{$medium} {
+        $columns: 4;
+    }
+
+    @include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);
+}
