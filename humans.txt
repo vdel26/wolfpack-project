@@ -1,6 +1,9 @@
-/* Wolfpack Project*/
+/* WOLFPACK PROJECT*/
 Coming soon, fall 2013
 
-/* SITE */
-Victor Delgado, Ernest Romero
-Made using Foundation, Compass, Requirejs
+/* Site design */
+    Victor Delgado -- @lechienvic
+    Ernest Romero -- @romerocliment
+
+/* Technology */
+HTML5, CSS3, Foundation, Compass
