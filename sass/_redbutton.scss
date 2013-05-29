@@ -20,4 +20,6 @@ $is-input: false;
     @include button($padding, $bg, $radius, $full-width, $disabled, $is-input);
     font-family: "Lucida Grande";
     font-weight: normal;
+    box-shadow: none;
+    text-shadow: 0px 1px 8px #555;
 }

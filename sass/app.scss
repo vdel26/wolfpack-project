@@ -1,54 +1,18 @@
-// Global Foundation Settings
+// foundation
 @import "settings";
-
-// Comment out this import if you are customizing you imports below
 @import "foundation";
 
-// Import specific parts of Foundation by commenting the import "foundation"
-// and uncommenting what you want below. You must uncomment the following if customizing
-
-//Y @import "foundation/components/global"; // *always required
-//Y @import "foundation/components/grid";
-//Y @import "foundation/components/visibility";
-// @import "foundation/components/block-grid";
-//Y @import "foundation/components/type";
-//Y @import "foundation/components/buttons";
-//Y @import "foundation/components/forms"; // *requires components/buttons
-// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
-// @import "foundation/components/button-groups"; // *requires components/buttons
-// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
-// @import "foundation/components/split-buttons"; // *requires components/buttons
-// @import "foundation/components/flex-video";
-//Y @import "foundation/components/section";
-//Y @import "foundation/components/top-bar";  // *requires components/grid
-// @import "foundation/components/orbit";
-// @import "foundation/components/reveal";
-// @import "foundation/components/joyride";
-// @import "foundation/components/clearing";
-// @import "foundation/components/alert-boxes";
-// @import "foundation/components/breadcrumbs";
-// @import "foundation/components/keystrokes";
-//Y @import "foundation/components/labels";
-// @import "foundation/components/inline-lists";
-// @import "foundation/components/pagination";
-//Y @import "foundation/components/panels";
-// @import "foundation/components/pricing-tables";
-// @import "foundation/components/progress-bars";
-// @import "foundation/components/side-nav";
-// @import "foundation/components/sub-nav";
-// @import "foundation/components/switch";
-// @import "foundation/components/magellan";
-// @import "foundation/components/tables";
-// @import "foundation/components/thumbs";
-// @import "foundation/components/tooltips";
-// @import "foundation/components/dropdown";
-
+// custom css components
 @import "redbutton";
-@import "email-form";
+@import "nav-bar";
 
 body {
     font-family: 'Cassannet';
     background-color: $body-bg;
+}
+::selection {
+    background: rgba(255,0,0,.5);
+    color: #FFF; 
 }
 .strong {
     font-family: 'Cassannet Bold';
@@ -88,16 +52,6 @@ body {
 }
 header.stickybar {
     margin-bottom: 95px;
-}
-.top-bar {
-    box-shadow: 0px 4px 10px 0px #C4C4C4;
-
-    &.stickybar {
-        position: fixed;
-        top: 0;
-        z-index: 20;
-        width: 100%;
-    }
 }
 .panel h1, h2, h3{
     color: $header-font-color;

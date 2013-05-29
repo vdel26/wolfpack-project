@@ -1,6 +1,7 @@
 all:
 
 server:
+	compass watch &
 	python -m SimpleHTTPServer 8080
 
 build:

@@ -8,6 +8,19 @@ var Wolf = (function ($, win, doc, undefined) {
     root.init = function () {
         d.foundation();
         root.stickyNav();
+
+        // attach event listeners for navbar
+        $('.top-bar a').click(function (evt) {
+            evt.preventDefault();
+            if($('html').hasClass('touch')) {
+                $('.nav-item').toggleClass('closed');
+            }
+            root.smoothScroll($(evt.target.hash), 400);
+        });
+
+        if($('html').hasClass('touch')) {
+            this.touchMode();
+        }
     };
 
     root.stickyNav = function () {
@@ -28,6 +41,20 @@ var Wolf = (function ($, win, doc, undefined) {
                     header.removeClass('stickybar');
                 }
             }
+        });
+    };
+
+    root.smoothScroll = function (elem, duration) {
+        Foundation.lib_methods.scrollTo(w, elem.offset().top - nav.height(), duration);
+    };
+
+    root.touchMode = function () {
+        $('.nav-item').addClass('touch-item closed');
+        $('.top-bar .column-list').removeClass('inline-list column-list').addClass('touch-list');
+        nav.addClass('touch-bar');
+
+        $('.hamb').on('touchend', function (evt) {
+            $('.nav-item').toggleClass('closed');
         });
     };
 
