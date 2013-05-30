@@ -50,10 +50,11 @@ var Wolf = (function ($, win, doc, undefined) {
 
     root.touchMode = function () {
         $('.nav-item').addClass('touch-item closed');
-        $('.top-bar .column-list').removeClass('inline-list column-list').addClass('touch-list');
+        $('.top-bar .column-list').removeClass('inline-list column-list').addClass('touch-list closed');
         nav.addClass('touch-bar');
 
-        $('.hamb').on('touchend', function (evt) {
+        $('.hamb').on('touchstart', function (evt) {
+            $('.touch-list').toggleClass('closed');
             $('.nav-item').toggleClass('closed');
         });
     };

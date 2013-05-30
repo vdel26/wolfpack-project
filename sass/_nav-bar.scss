@@ -26,6 +26,9 @@
             width: 40%;
             vertical-align: middle;
         }
+        &.only-touch {
+            display: none;
+        }
         button {
             font-size: 0.8em;
 
@@ -38,7 +41,7 @@
     }
     .nav-item a{
         color: rgb(140,140,140);
-        font-size: 0.8em;
+        font-size: 1em;
         line-height: $topbar-height;
         text-align: center;
         letter-spacing: 1px;
@@ -48,25 +51,24 @@
         }
     }
     .hamb {
-        height: auto;
-        width: 44px;
+        display: inline-block;
+        height: 44px;
+        width: 70px;
+        padding: 0 5px;
         margin-left: 1em;
         overflow: hidden;
-
-        &:first-child {
-            margin-top: .3em;
-        }
-        &:last-child {
-            margin-bottom: .8em;
-        }
     }
     .hamb-line {
-        width: 38px;
+        width: 34px;
         height: 4px;
         margin: auto;
         margin-top: 6px;
         border-radius: 4px;
-        background: rgb(140,140,140);
+        background: rgb(180,180,180);
+
+        &:first-child {
+            margin-top: 10px;
+        }
     }
     
     @media #{$small} {
@@ -85,30 +87,45 @@
     }
     .touch-list {
         overflow: hidden;
+        -webkit-transition: height 150ms linear;
+        transition: height 150ms linear;
+        height: 284px;
+
+        &.closed {
+            height: 44px;
+        }
 
         & > li.open {
             display: block;
-            //opacity: 1;
+            opacity: 1;
         }
         & > li.closed {
-            display: none;
-            //opacity: 0;
+            display: none !important;
+            opacity: 0;
         }
         .list-header {
             height: 44px;
 
             .redbutton {
                 position: relative;
-                top: -30px;
-                right: -160px;
+                top: -17px;
+                right: -70px;
                 font-size: 0.8em;
                 margin-bottom: 0;
+                padding-top: 0.7em;
+                padding-bottom: 0.65em;
             }
+        }
+        & >li.only-touch {
+            display: inherit;
         }
     }
     .touch-item {
         float: left;
         width: 100%;
+
+        -webkit-transition: opacity 200ms linear;
+        transition: opacity 200ms linear;
 
         a {
             margin-left: 1.5em;

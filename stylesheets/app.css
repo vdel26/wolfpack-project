@@ -6218,6 +6218,10 @@ a.th {
   vertical-align: middle;
 }
 /* line 29, ../sass/_nav-bar.scss */
+.top-bar .nav-item.only-touch {
+  display: none;
+}
+/* line 32, ../sass/_nav-bar.scss */
 .top-bar .nav-item button {
   font-size: 0.8em;
   margin: 0;
@@ -6226,87 +6230,102 @@ a.th {
   padding-top: 0.7em;
   padding-bottom: 0.7em;
 }
-/* line 39, ../sass/_nav-bar.scss */
+/* line 42, ../sass/_nav-bar.scss */
 .top-bar .nav-item a {
   color: #8c8c8c;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 60px;
   text-align: center;
   letter-spacing: 1px;
 }
-/* line 46, ../sass/_nav-bar.scss */
+/* line 49, ../sass/_nav-bar.scss */
 .top-bar .nav-item a:hover {
   color: #d10000;
 }
-/* line 50, ../sass/_nav-bar.scss */
+/* line 53, ../sass/_nav-bar.scss */
 .top-bar .hamb {
-  height: auto;
-  width: 44px;
+  display: inline-block;
+  height: 44px;
+  width: 70px;
+  padding: 0 5px;
   margin-left: 1em;
   overflow: hidden;
 }
-/* line 56, ../sass/_nav-bar.scss */
-.top-bar .hamb:first-child {
-  margin-top: .3em;
-}
-/* line 59, ../sass/_nav-bar.scss */
-.top-bar .hamb:last-child {
-  margin-bottom: .8em;
-}
-/* line 63, ../sass/_nav-bar.scss */
+/* line 61, ../sass/_nav-bar.scss */
 .top-bar .hamb-line {
-  width: 38px;
+  width: 34px;
   height: 4px;
   margin: auto;
   margin-top: 6px;
   border-radius: 4px;
-  background: #8c8c8c;
+  background: #b4b4b4;
+}
+/* line 69, ../sass/_nav-bar.scss */
+.top-bar .hamb-line:first-child {
+  margin-top: 10px;
 }
 @media only screen and (min-width: 48em) {
-  /* line 73, ../sass/_nav-bar.scss */
+  /* line 75, ../sass/_nav-bar.scss */
   .top-bar .nav-item a {
     font-size: 1.1em;
   }
-  /* line 76, ../sass/_nav-bar.scss */
+  /* line 78, ../sass/_nav-bar.scss */
   .top-bar .nav-item button {
     font-size: 1em;
     margin-top: 0.50em;
   }
 }
-/* line 83, ../sass/_nav-bar.scss */
+/* line 85, ../sass/_nav-bar.scss */
 .top-bar.touch-bar {
   height: auto;
 }
-/* line 86, ../sass/_nav-bar.scss */
+/* line 88, ../sass/_nav-bar.scss */
 .top-bar .touch-list {
   overflow: hidden;
+  -webkit-transition: height 150ms linear;
+  transition: height 150ms linear;
+  height: 284px;
 }
-/* line 89, ../sass/_nav-bar.scss */
+/* line 94, ../sass/_nav-bar.scss */
+.top-bar .touch-list.closed {
+  height: 44px;
+}
+/* line 98, ../sass/_nav-bar.scss */
 .top-bar .touch-list > li.open {
   display: block;
+  opacity: 1;
 }
-/* line 93, ../sass/_nav-bar.scss */
+/* line 102, ../sass/_nav-bar.scss */
 .top-bar .touch-list > li.closed {
-  display: none;
+  display: none !important;
+  opacity: 0;
 }
-/* line 97, ../sass/_nav-bar.scss */
+/* line 106, ../sass/_nav-bar.scss */
 .top-bar .touch-list .list-header {
   height: 44px;
 }
-/* line 100, ../sass/_nav-bar.scss */
+/* line 109, ../sass/_nav-bar.scss */
 .top-bar .touch-list .list-header .redbutton {
   position: relative;
-  top: -30px;
-  right: -160px;
+  top: -17px;
+  right: -70px;
   font-size: 0.8em;
   margin-bottom: 0;
+  padding-top: 0.7em;
+  padding-bottom: 0.65em;
 }
-/* line 109, ../sass/_nav-bar.scss */
+/* line 119, ../sass/_nav-bar.scss */
+.top-bar .touch-list > li.only-touch {
+  display: inherit;
+}
+/* line 123, ../sass/_nav-bar.scss */
 .top-bar .touch-item {
   float: left;
   width: 100%;
+  -webkit-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
 }
-/* line 113, ../sass/_nav-bar.scss */
+/* line 130, ../sass/_nav-bar.scss */
 .top-bar .touch-item a {
   margin-left: 1.5em;
 }
@@ -6344,7 +6363,7 @@ body {
   top: 0;
   left: 0;
   margin-left: 5%;
-  margin-top: 1.5%;
+  margin-top: 0.25%;
 }
 /* line 35, ../sass/app.scss */
 .wolfpack-container h1 {
@@ -6374,18 +6393,28 @@ header.stickybar {
   margin-bottom: 95px;
 }
 
-/* line 56, ../sass/app.scss */
-.panel h1, h2, h3 {
+/* line 57, ../sass/app.scss */
+.panel h1, .panel h2, .panel h3 {
   color: #141823;
 }
+/* line 60, ../sass/app.scss */
+.panel h1 {
+  font-size: 1.8em;
+}
+@media only screen and (min-width: 48em) {
+  /* line 64, ../sass/app.scss */
+  .panel h1 {
+    font-size: 2.75em;
+  }
+}
 
-/* line 59, ../sass/app.scss */
+/* line 69, ../sass/app.scss */
 .panel p {
   color: #6a7181;
 }
 
-/* line 62, ../sass/app.scss */
-.section1-panel {
+/* line 72, ../sass/app.scss */
+.section1-panel, .section2-panel, .section3-panel {
   overflow: hidden;
   background-color: #FFF;
   border-radius: 3px;
