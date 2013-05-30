@@ -14,6 +14,7 @@ var Wolf = (function ($, win, doc, undefined) {
             evt.preventDefault();
             if($('html').hasClass('touch')) {
                 $('.nav-item').toggleClass('closed');
+                $('.touch-list').toggleClass('closed');
             }
             root.smoothScroll($(evt.target.hash), 400);
         });

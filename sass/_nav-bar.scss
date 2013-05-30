@@ -87,20 +87,18 @@
     }
     .touch-list {
         overflow: hidden;
-        -webkit-transition: height 150ms linear;
-        transition: height 150ms linear;
+        @include transition(height 400ms ease-in);
         height: 284px;
 
         &.closed {
             height: 44px;
         }
-
-        & > li.open {
-            display: block;
+        & > li {
+            @include transition(opacity 250ms ease-in);
             opacity: 1;
         }
         & > li.closed {
-            display: none !important;
+            //display: none !important;
             opacity: 0;
         }
         .list-header {
@@ -124,8 +122,6 @@
         float: left;
         width: 100%;
 
-        -webkit-transition: opacity 200ms linear;
-        transition: opacity 200ms linear;
 
         a {
             margin-left: 1.5em;
