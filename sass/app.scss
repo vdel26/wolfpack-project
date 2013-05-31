@@ -8,6 +8,7 @@
 // custom css components
 @import "redbutton";
 @import "nav-bar";
+@import "social-button";
 
 body {
     font-family: 'Cassannet';
@@ -38,6 +39,14 @@ body {
     h1 {
         font-size: 2.5em;
         color: #FFF;
+    }
+    small {
+        font-weight: 400;
+        font-size: 70%;
+        color: #FFF;
+    }
+    .a-button {
+        width: 172px;
     }
 
     @media #{$small} {

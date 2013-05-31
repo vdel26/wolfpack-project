@@ -29,7 +29,7 @@
         &.only-touch {
             display: none;
         }
-        button {
+        button, .a-button {
             font-size: 0.8em;
 
             margin: 0;
@@ -38,8 +38,11 @@
             padding-top: 0.7em;
             padding-bottom: 0.7em;
         }
+        .a-button {
+            width: 172px;
+        }
     }
-    .nav-item a{
+    .nav-item .nav-link{
         color: rgb(140,140,140);
         font-size: 1em;
         line-height: $topbar-height;
@@ -72,16 +75,16 @@
     }
     
     @media #{$small} {
-        .nav-item a {
+        .nav-item .nav-link {
             font-size: 1.1em;
         }
-        .nav-item button {
+        .nav-item button, .nav-item .a-button {
             font-size: 1em;
             margin-top: 0.50em;
         }
     }
 
-    // touch classes
+// TOUCH CLASSES
     &.touch-bar {
         height: auto;
     }
@@ -123,7 +126,7 @@
         width: 100%;
 
 
-        a {
+        .nav-link {
             margin-left: 1.5em;
         }
     }

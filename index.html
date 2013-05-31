@@ -8,6 +8,19 @@
     <link href="stylesheets/normalize.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
     <link href="stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
     <script src="javascripts/vendor/custom.modernizr.js"></script>
+    <script>
+    // UserVoice
+    (function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/llJGlkqMp2abtyv8fGbs7A.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()
+    </script>
+    <script>
+    // Google Analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-40982735-1', 'wolfpack-project.com');
+    ga('send', 'pageview');
+    </script>
 </head>
 <body>
     <header class="row full">
@@ -16,11 +29,12 @@
         </video>
         <img class="header-video show-for-touch" src="images/header-mobile.png">
         <div class="wolfpack-container">
-            <h1>Wolfpack Project</h1>
-            <button class="redbutton hide-for-small" onclick="location.href='http://www.domain.com';">JOIN THE TEAM</button>
+            <h1>Wolfpack <small> Project</small></h1>
+            <!-- <button class="redbutton hide-for-small" onclick="location.href='http://www.domain.com';">JOIN THE TEAM</button> -->
+            <a class="redbutton a-button hide-for-small" href="javascript:void(0)" data-uv-lightbox="classic_widget" data-uv-mode="feedback" data-uv-primary-color="#cc6d00" data-uv-link-color="#007dbf" data-uv-forum-id="205539">JOIN THE TEAM</a>
         </div>
     </header>
-    <nav class="top-bar">
+    <nav class="top-bar" id="top-bar">
         <div class="row-list">
             <ul class="inline-list column-list">
                 <li class="list-header show-for-touch">
@@ -29,13 +43,18 @@
                         <div class="hamb-line"></div>
                         <div class="hamb-line"></div>
                     </div>
-                    <button href="#" class="redbutton" onclick="location.href='http://www.domain.com';">JOIN THE TEAM</a>
+                    <!-- <button href="#" class="redbutton" onclick="location.href='http://www.domain.com';">JOIN THE TEAM</a> -->
+                    <a class="redbutton a-button" href="javascript:void(0)" data-uv-lightbox="classic_widget" data-uv-mode="feedback" data-uv-primary-color="#cc6d00" data-uv-link-color="#007dbf" data-uv-forum-id="205539">JOIN THE TEAM</a>
                 </li>
-                <li class="nav-item"><a href="#project">THE PROJECT</a></li>
-                <li class="nav-item"><a href="#helmet">THE HELMET</a></li>
-                <li class="nav-item"><a href="#rewards">THE REWARDS</a></li>
-                <li class="nav-item only-touch"><a href="#social">FOLLOW US</a></li>
-                <li class="nav-item btn hide-for-touch"><button href="#" class="redbutton">JOIN THE TEAM</a></li>
+                <li class="nav-item"><a class="nav-link" href="#project">THE PROJECT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#helmet">THE HELMET</a></li>
+                <li class="nav-item"><a class="nav-link" href="#rewards">THE REWARDS</a></li>
+                <li class="nav-item only-touch"><a class="nav-link" href="#social">FOLLOW US</a></li>
+                <li class="nav-item btn hide-for-touch">
+<!--                     <button href="#" class="redbutton">JOIN THE TEAM</a>
+ -->                    
+                    <a class="redbutton a-button" href="javascript:void(0)" data-uv-lightbox="classic_widget" data-uv-mode="feedback" data-uv-primary-color="#cc6d00" data-uv-link-color="#007dbf" data-uv-forum-id="205539">JOIN THE TEAM</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -50,7 +69,7 @@
                     </p>
                 </div>
                 <div class="large-6 columns">
-                    <img src="images/helmet.png">
+                    <img src="images/project-img.jpg" width="350">
                     <h3>Pre-orders starting in August 2013</h3>
                 </div>
             </div>
@@ -61,8 +80,10 @@
             <div class="panel section2-panel">
                 <div class="large-6 columns">
                     <h1>THE HELMET</h1>
-                    <p>"One helmet to rule them all" and this is what is, a 2.0 helmet adapted to all kind of sports. The original idea came to us when we wanted to record a snowboard video. We tough, why not to have our smartphone integrated with our helmet? We could listen to music, use our camera, our GPS, or even more, we could develop new software to use all this features in our helmet.
+                    <p>"One helmet to rule them all" and this is what is, a 2.0 helmet adapted to all kind of sports. The original idea came to us when we wanted to record a snowboard video. We thought, why not to have our smartphone integrated with our helmet? We could listen to music, use our camera, our GPS, or even more, we could use new software to enjoy all this features in our helmet.</p>
+                    <p>Download the product description and requirements to understand better the concept. We just ask you to post a tweet to spread the word.
                     </p>
+                    <iframe src="http://www.paywithatweet.com/dlbutton01.php?id=7464056b9338ce5f6583731cec980896" name="paytweet_button" scrolling="no" frameborder="no" height = "24px" width = "145px"></iframe>
                 </div>
                 <div class="large-6 columns">
                     <img src="images/helmet.png">
@@ -78,20 +99,19 @@
                     <p>In addition to the Lifelong Team Membership:</p>
                     <p>The top 10 most voted ideas in our open innovation platform will receive a free helmet.</p>
                     <p>The top 50 most voted ideas will receive a Wolfpack t-shirt.</p>
-                    <p>But that's not all, we will be hiring our future engineers and designers among you, so spread the word! You might get a job for you or one of your friends. </p>
+                    <p>But that's not all, we will be hiring our future engineers and designers among you, so spread the word! You might get a job for you or one of your friends.</p>
                 </div>
                 <div class="large-6 columns">
-                    <img src="images/helmet.png">
+                    <img src="images/rewards-img.jpg" width="390">
                 </div>
             </div>
         </div>
     </div>
     <div class="row show-for-touch"  id="social">
         <div class="large-12 columns">
-            <div class="panel radius">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
+            <a href="https://www.facebook.com/pages/Wolfpack-Project/148127855353962" class="social-btn facebook">facebook</a>
+            <a href="https://twitter.com/WolfpackPrjct" class="social-btn twitter">twitter</a>
+            <a href="#" class="social-btn google">google+</a>
         </div>
     </div>
 <script>
@@ -99,18 +119,8 @@ document.write('<script src=' +
 ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
 '.js><\/script>')
 </script>
-
 <script src="javascripts/foundation/foundation.js"></script>
 <script src="javascripts/foundation/foundation.section.js"></script>
 <script type="text/javascript" src="javascripts/main.js"></script>
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-40982735-1', 'wolfpack-project.com');
-ga('send', 'pageview');
-</script>
 </body>
 </html>

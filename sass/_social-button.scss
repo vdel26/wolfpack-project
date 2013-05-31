@@ -1,0 +1,44 @@
+$padding: $button-med;
+
+$fbcolor: #2f4a84;
+$twcolor: #00acee;
+$gcolor: #ce3d2b;
+
+$radius: 10px;
+
+$full-width: false;
+$disabled: false;
+$is-input: false;
+
+.social-btn {
+    width: 100%;
+    display: block;
+}
+
+.facebook {
+    @include button($padding, $fbcolor, $radius, $full-width, $disabled, $is-input);
+    font-family: "Lucida Grande";
+    font-weight: normal;
+    box-shadow: none;
+    text-shadow: 0px 1px 8px #555;
+    border-color: $fbcolor;
+    margin-bottom: 0.5em;
+}
+.twitter {
+    @include button($padding, $twcolor, $radius, $full-width, $disabled, $is-input);
+    font-family: "Lucida Grande";
+    font-weight: normal;
+    box-shadow: none;
+    text-shadow: 0px 1px 8px #555;
+    border-color: $twcolor;
+    margin-bottom: 0.5em;
+}
+.google {
+    @include button($padding, $gcolor, $radius, $full-width, $disabled, $is-input);
+    font-family: "Lucida Grande";
+    font-weight: normal;
+    box-shadow: none;
+    text-shadow: 0px 1px 8px #555;
+    border-color: $gcolor;
+    margin-bottom: 0.5em;
+}
