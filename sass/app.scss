@@ -48,6 +48,9 @@ body {
     .a-button {
         width: 172px;
     }
+    .social-header {
+        margin-top: 0;
+    }
 
     @media #{$small} {
         margin-left: 12.5%;
@@ -55,6 +58,9 @@ body {
 
         h1 {
             font-size: 3.75em;
+        }
+        .social-header {
+            margin-top: 50px;
         }
     }
 }

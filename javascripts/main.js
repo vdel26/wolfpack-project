@@ -55,6 +55,7 @@ var Wolf = (function ($, win, doc, undefined) {
         nav.addClass('touch-bar');
 
         $('.hamb').on('touchstart', function (evt) {
+            win.scrollTo(0,nav.offset().top);
             $('.touch-list').toggleClass('closed');
             $('.nav-item').toggleClass('closed');
         });
