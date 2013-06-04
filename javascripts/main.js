@@ -10,7 +10,8 @@ var Wolf = (function ($, win, doc, undefined) {
         root.stickyNav();
 
         // attach event listeners for navbar
-        $('.top-bar a').click(function (evt) {
+        $('.top-bar .nav-link').click(function (evt) {
+            console.log(evt);
             evt.preventDefault();
             if($('html').hasClass('touch')) {
                 $('.nav-item').toggleClass('closed');

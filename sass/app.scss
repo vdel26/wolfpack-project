@@ -91,4 +91,39 @@ header.stickybar {
     overflow: hidden;
     background-color: #FFF;
     border-radius: $global-radius;
+    margin-bottom: 2em;
+}
+.paywithtweet {
+    text-align: center;
+    margin-bottom: 1.5em;
+
+    @media #{$small} {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    &:hover {
+        span {
+            color: #111;
+        }
+    }
+    > span {
+        vertical-align: middle;
+        top: 0.1em;
+        position: relative;
+        margin-right: 0.5em;
+        @include transition(all 400ms linear);
+    }
+    > span:hover {
+        cursor: e-resize;
+        color: #111;
+    }
+    >span:hover:after {
+        content: "\00bb";
+        font-size: 1.2em;
+        margin-left: 2px;
+    }
+    > iframe {
+        vertical-align: middle;
+    }
 }
