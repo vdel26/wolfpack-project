@@ -1,1 +1,2 @@
-Wolfpack Project website design
+Wolfpack Project website design  
+www.wolfpack-project.com  
