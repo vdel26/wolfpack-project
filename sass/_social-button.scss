@@ -54,7 +54,7 @@ $is-input: false;
     margin-right: 0.2em;
 
     background: rgba(255,254,255,0.15);
-    color: rgba(255,254,255,0.40);
+    color: rgba(255,254,255,0.9);
     line-height: 46px;
     text-align: center;
     @include transition(all 500ms ease-in);
@@ -64,7 +64,7 @@ $is-input: false;
 
     &:hover {
         background: rgba(255,254,255,0.30);
-        color: rgba(255,254,255,0.90);
+        color: rgba(255,254,255,1);
 
         &.fb {
             border: 2px solid rgba($fbcolor, 0.6);

@@ -8,6 +8,7 @@
     <link href="stylesheets/normalize.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
     <link href="stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
     <script src="javascripts/vendor/custom.modernizr.js"></script>
     <script>
     // UserVoice
@@ -26,7 +27,10 @@
 <body>
     <header class="row full">
         <video class="header-video hide-for-touch" autoplay loop>
-            <source src="https://fbcdn-dragon-a.akamaihd.net/cfs-ak-ash3/676434/970/135351913305575_544816858.mp4">
+            <!-- <source src="https://fbcdn-dragon-a.akamaihd.net/cfs-ak-ash3/676434/970/135351913305575_544816858.mp4"> -->
+            <source src="videos/WolfpackProject_short_web_512kbs_mpeg4.mp4" type="video/mp4">
+            <source src="videos/WolfpackProject_short_web_512kbs_webm.webm" type="video/webm">
+            <source src="videos/WolfpackProject_short_web_512kbs_h264.mp4" type="video/mp4">
         </video>
         <img class="header-video show-for-touch" src="images/header-mobile.png">
         <div class="wolfpack-container">
@@ -67,13 +71,14 @@
             <div class="panel section1-panel">
                 <div class="large-6 columns">
                     <h1>THE PROJECT</h1>
-                    <p>We are building a community to design and create a new concept of sports helmet. We prepared an open innovation platform, and we want you to join us and become part of our Team.
+                    <p>The Wolfpack Project is an open innovation project that aims to design and create a new concept of extreme sports helmet. 
                     </p>
-                    <p>Once the product launches, we will close the platform and every Team member will have a lifelong membership, with a permanent 30% discount on our products. Not enough? Check the rewards section!
+                    <p>We have prepared a community to vote and discuss about the design of the helmet.
                     </p>
+                    <p>We want you to join us and become part of our Team. We will reward top contributors!</p>
                 </div>
                 <div class="large-6 columns">
-                    <img src="images/project-img.jpg" width="350">
+                    <img src="images/sec1-img.png" width="350" onclick="location.href='http://www.youtube.com/watch?v=Oy107xVyGNw'">
                 </div>
             </div>
         </div>
@@ -83,9 +88,10 @@
             <div class="panel section2-panel">
                 <div class="large-6 columns">
                     <h1>THE HELMET</h1>
-                    <p>"One helmet to rule them all" and this is what is, a 2.0 helmet adapted to all kind of sports. The original idea came to us when we wanted to record a snowboard video. We thought, why not to have our smartphone integrated with our helmet? We could listen to music, use our camera, our GPS, or even more, we could use new software to enjoy all this features in our helmet.</p>
-                    <p>Download the product description and requirements to understand better the concept. We just ask you to post a tweet to spread the word.
-                    </p>
+                    <h3>One Helmet to rule them all</h3>
+                    <p>We are currently building a prototype of the helmet. With this helmet you will be able to integrate your smartphone and use the camera, the GPS or listen to your music.</p>
+                    <p>Our question is... How do you want this helmet to be? Do you want it to look more like a skateboard helmet? Would you appreciate an extra protection? Or do you prefer it to be light and stylish? Are you an engineering student and want to contribute? Or do you just love extreme sports and want to make your opinion heard?</p>
+                    <p>Just download the product description and requirements to better understand the concept! We just ask you to post a tweet to help us spread the word.</p>
                     <div class="paywithtweet">
                         <span>DOWNLOAD</span>
                         <iframe src="http://www.paywithatweet.com/dlbutton01.php?id=7464056b9338ce5f6583731cec980896" name="paytweet_button" scrolling="no" frameborder="no" height = "24px" width = "145px"></iframe>
@@ -102,9 +108,10 @@
             <div class="panel section3-panel">
                 <div class="large-6 columns">
                     <h1>THE REWARDS</h1>
-                    <p>In addition to the Lifelong Team Membership:</p>
-                    <p>The top 10 most voted ideas in our open innovation platform will receive a free helmet.</p>
-                    <p>The top 50 most voted ideas will receive a Wolfpack t-shirt.</p>
+                    <p>When you join our open innovation platform, you will become automatically a <strong>Wolfpack Team member</strong>. When the product launches, every team member will enjoy a permanent 20% discount in our products.</p>
+                    <p>In addition to the permanent Team Membership, we will reward top contributors:</p>
+                    <p class="indent">The <strong>top 10 most voted ideas</strong> in our open innovation platform will receive a free helmet.</p>
+                    <p class="indent">The <strong>top 20 most voted ideas</strong> will receive a Wolfpack t-shirt.</p>
                     <p>But that's not all, we will be hiring our future engineers and designers among you, so spread the word! You might get a job for you or one of your friends.</p>
                 </div>
                 <div class="large-6 columns">
@@ -118,6 +125,12 @@
             <a href="https://www.facebook.com/pages/Wolfpack-Project/148127855353962" class="social-btn facebook">facebook</a>
             <a href="https://twitter.com/WolfpackPrjct" class="social-btn twitter">twitter</a>
             <a href="http://www.youtube.com/user/WolfpackPrjct" class="social-btn google">youtube</a>
+        </div>
+    </div>
+    <div class="row full hide-for-touch contact" id="contact" onclick="location.href='mailto:ernest@wolfpack-helmets.com'">
+        <div class="circle">
+            <div class="icon1">CONTACT US</div>
+            <div class="icon2" data-icon="&#xe003;" aria-hidden="true"></div>
         </div>
     </div>
 <script>

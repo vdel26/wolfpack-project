@@ -4,11 +4,14 @@
 
 // compass helpers
 @import "compass/css3/transition";
+@import "compass/css3/transform";
+@import "compass/css3/user-interface";
 
 // custom css components
 @import "redbutton";
 @import "nav-bar";
 @import "social-button";
+@import "contact-button";
 
 body {
     font-family: 'Cassannet';
@@ -37,6 +40,8 @@ body {
     margin-top: 0.25%;
 
     h1 {
+        font-family: "Cassannet", "Helvetica Neue", Helvetica;
+        font-weight: bold;
         font-size: 2.5em;
         color: #FFF;
     }
@@ -79,13 +84,24 @@ header.stickybar {
         font-size: 1.8em;
     }
     @media #{$small} {
+        padding: 3.5em;
+
         h1 {
-            font-size: 2.75em;
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.5em;
+            color: lighten($header-font-color, 20%);
         }
     }
 }
 .panel p {
     color: $body-font-color;
+    text-rendering: optimizeLegibility;
+
+    &.indent {
+        padding-left: 2em;
+    }
 }
 .section1-panel, .section2-panel, .section3-panel {
     overflow: hidden;
@@ -93,14 +109,34 @@ header.stickybar {
     border-radius: $global-radius;
     margin-bottom: 2em;
 }
+#project img {
+    @media #{$small} {
+        margin-top: 2em;
+        @include transition(all 200ms linear);
+
+        &:hover {
+            cursor: pointer;
+            -webkit-filter: grayscale(100%);
+            box-shadow: 4px 4px 10px 4px #888;
+        }
+    }
+}
+#helmet img, #rewards img {
+    @media #{$small} {
+        margin-top: 4em;
+    }
+}
+#contact {
+    height: 150px;
+    //border-top: 1px solid rgba(100,100,100,0.1);
+
+    .circle {
+        margin: auto;
+    }
+}
 .paywithtweet {
     text-align: center;
     margin-bottom: 1.5em;
-
-    @media #{$small} {
-        margin-bottom: 0;
-        text-align: left;
-    }
 
     &:hover {
         span {
@@ -125,5 +161,15 @@ header.stickybar {
     }
     > iframe {
         vertical-align: middle;
+        margin-top: 0.5em;
+    }
+
+    @media #{$small} {
+        margin-bottom: 1em;
+        text-align: left;
+
+        > iframe {
+            margin-top: 0;
+        }
     }
 }

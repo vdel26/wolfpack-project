@@ -135,17 +135,29 @@ $total-columns: 12;
 
 @font-face {
     font-family: 'Cassannet';
-    src: url('../fonts/Cassannet.otf') format('opentype');
+    src: url('../fonts/cassannet.eot');
+    src: url('../fonts/cassannet.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cassannet.woff') format('woff'),
+         url('../fonts/cassannet.ttf') format('truetype'),
+         url('../fonts/cassannet.svg#cassannet_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Cassannet Bold';
-    src: url('../fonts/CassannetBold.otf') format('opentype');
+    src: url('../fonts/cassannetbold.eot');
+    src: url('../fonts/cassannetbold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cassannetbold.woff') format('woff'),
+         url('../fonts/cassannetbold.ttf') format('truetype'),
+         url('../fonts/cassannetbold.svg#cassannet_boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 //// Heading font styles
 
-$header-font-family: "Cassannet", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+$header-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$header-font-weight: 400;
 // $header-font-style: normal;
 $header-font-color: #141823;
 // $header-line-height: 1.4;
@@ -177,8 +189,8 @@ $header-font-color: #141823;
 
 //// Paragraphs
 
-$paragraph-font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$paragraph-font-weight: normal;
+$paragraph-font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
+$paragraph-font-weight: 300;
 $paragraph-font-size: 1em;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: emCalc(20px);

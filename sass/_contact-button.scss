@@ -1,0 +1,56 @@
+.contact {
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid $body-font-color;
+    
+    overflow: hidden;
+
+    cursor: pointer;
+    @include user-select(none);
+
+    // mask to solve the webkit bug that doesn't hide overflow through rounder corners
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+    &:hover .icon1 {
+      @include transform(translate3d(0,75%,0));
+    }
+    &:hover .icon2 {
+      @include transform(translate3d(0,300%,0));
+    }
+    &:active {
+      border: 4px solid #f93a3d;
+      background: rgba(#f93a3d, 0.1);
+    }
+  }
+
+  .icon1 {
+    height: 40px;
+    //width: 40px;
+    //background: rgba(#600, 0.5);
+
+    text-align: center;
+    color: rgba(#f93a3d, 1);
+    font-size: 1.2em;
+    
+    margin: auto;
+    @include transition(transform 250ms linear);
+    @include transform(translate3d(0,-120%,0));
+  }
+
+  .icon2 {
+    height: 50px;
+    width: 50px;
+    //background: rgba(#666, 0.5);
+
+    text-align: center;
+    font-size: 3em;
+    color: rgba(#f93a3d,0.9);
+    
+    margin: auto;
+    @include transition(transform 250ms linear);
+    @include transform(translate3d(0,-35%,0));
+  }
+}
